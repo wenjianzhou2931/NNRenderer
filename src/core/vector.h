@@ -3,6 +3,8 @@
 #include "./global.h"
 #include "./util.h"
 
+/********** Vector And Relative Operations Start **********/
+
 class Vector2f 
 {
 public:
@@ -308,3 +310,7 @@ inline Vector3f FaceForward(const Vector3f &normal, const Vector3f &v)
 {
     return (Dot(normal, v) < 0.f) ? -normal : normal;
 }
+
+/********** Vector And Relative Operations End **********/
+
+// TODO: Bounds3f
